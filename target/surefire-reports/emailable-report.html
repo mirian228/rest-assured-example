@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">8</td><td class="num">159</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">com.koroyan.restassuredexample.ApiTest</td><td><a href="#m0">addIntegerStringTest</a></td><td rowspan="2">1699209533912</td><td rowspan="2">101</td></tr><tr class="failedeven"><td><a href="#m1">addIntegerStringTest</a></td></tr><tr class="failedeven"><td><a href="#m2">addIntegerTest</a></td><td rowspan="2">1699209534017</td><td rowspan="2">0</td></tr><tr class="failedeven"><td><a href="#m3">addIntegerTest</a></td></tr><tr class="failedeven"><td><a href="#m4">addIntegerXmlTest</a></td><td rowspan="2">1699209534052</td><td rowspan="2">2</td></tr><tr class="failedeven"><td><a href="#m5">addIntegerXmlTest</a></td></tr><tr class="failedeven"><td><a href="#m6">findPersonTest</a></td><td rowspan="1">1699209534055</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">com.koroyan.restassuredexample.ListByNameTest</td><td><a href="#m7">testPersonListByName</a></td><td rowspan="1">1699209534057</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">com.koroyan.restassuredexample.ApiTest#addIntegerStringTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.koroyan.restassuredexample.data.models.MathOperation@327bcebd</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.lang.GroovyRuntimeException: Conflicting module versions. Module [groovy-xml is loaded in version 3.0.9 and you are trying to load version 4.0.15
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl$DefaultModuleListener.onModule(MetaClassRegistryImpl.java:510)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromProperties(ExtensionModuleScanner.java:87)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromMetaInf(ExtensionModuleScanner.java:81)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanClasspathModulesFrom(ExtensionModuleScanner.java:63)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanClasspathModules(ExtensionModuleScanner.java:54)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:125)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:86)
+	at groovy.lang.GroovySystem.&lt;clinit&gt;(GroovySystem.java:37)
+	... 42 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.koroyan.restassuredexample.ApiTest#addIntegerStringTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.koroyan.restassuredexample.data.models.MathOperation@54504ecd</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	... 36 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.koroyan.restassuredexample.ApiTest#addIntegerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.koroyan.restassuredexample.data.models.MathOperation@6c4980d3</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addInteger(Step.java:38)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerTest(ApiTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.koroyan.restassuredexample.ApiTest#addIntegerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.koroyan.restassuredexample.data.models.MathOperation@19c65cdc</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addInteger(Step.java:38)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerTest(ApiTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.koroyan.restassuredexample.ApiTest#addIntegerXmlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.koroyan.restassuredexample.data.models.MathOperation@74bf1791</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addIntegerXml(Step.java:59)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerXmlTest(ApiTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.koroyan.restassuredexample.ApiTest#addIntegerXmlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.koroyan.restassuredexample.data.models.MathOperation@38b27cdc</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addIntegerXml(Step.java:59)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerXmlTest(ApiTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.koroyan.restassuredexample.ApiTest#findPersonTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.findPerson(Step.java:93)
+	at com.koroyan.restassuredexample.ApiTest.findPersonTest(ApiTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.koroyan.restassuredexample.ListByNameTest#testPersonListByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.getListByName(Step.java:111)
+	at com.koroyan.restassuredexample.ListByNameTest.testPersonListByName(ListByNameTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

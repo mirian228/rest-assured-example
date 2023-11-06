@@ -1,13 +1,16 @@
 package com.koroyan.restassuredexample.steps;
 
+import com.koroyan.restassuredexample.data.CommonData;
 import com.koroyan.restassuredexample.enums.EndPoint;
 import com.koroyan.restassuredexample.enums.SOAPAction;
 import com.koroyan.restassuredexample.pojos.request.Envelope;
 import com.koroyan.restassuredexample.pojos.response.FindPersonResult;
+import com.koroyan.restassuredexample.pojos.response.GetListByNameResult;
 import com.koroyan.restassuredexample.services.RequestService;
 import com.koroyan.restassuredexample.utils.StringRequests;
 import com.koroyan.restassuredexample.utils.XmlUtils;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import org.apache.commons.io.IOUtils;
 
 
@@ -86,7 +89,7 @@ public class Step {
 
     public FindPersonResult findPerson(String id) {
         Envelope findPersonRequestModel = RequestService.getFindPersonRequestModel(id);
-        RestAssured.baseURI = EndPoint.BASE_URL.toString();
+       RestAssured.baseURI = EndPoint.BASE_URL.toString();
         return given()
                 .contentType("text/xml;charset=UTF-8").and()
                 .header("SOAPAction", SOAPAction.FIND_PERSON.toString())
@@ -100,5 +103,22 @@ public class Step {
                 .extract()
                 .body().xmlPath().getObject("Envelope.Body.FindPersonResponse.FindPersonResult",
                         FindPersonResult.class);
+    }
+
+    public GetListByNameResult getListByName(String name) {
+        Envelope getListByNameRequestModel = RequestService.getListByNameRequestModel(name);
+        RestAssured.baseURI = EndPoint.BASE_URL.toString();
+        return given()
+                .contentType(ContentType.XML)
+                .header(CommonData.SOAP_ACTION_KEY, SOAPAction.GET_LIST_BY_NAME)
+                .body(getListByNameRequestModel)
+                .when()
+                .post(EndPoint.BASE_URL.toString())
+                .then()
+                .log().ifError()
+                .assertThat()
+                .statusCode(200)
+                .extract()
+                .body().xmlPath().getObject("Envelope.Body.GetListByNameResponse.GetListByNameResult", GetListByNameResult.class);
     }
 }
