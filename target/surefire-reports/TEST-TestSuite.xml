@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="8" failures="8" name="TestSuite" time="0.142" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2023.1.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="20.0.2+9-78"/>
+    <property name="sun.boot.library.path" value="/Users/iunonavanidze/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/iunonavanidze/intellij idea workspace/rest-assured-example"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/iunonavanidze/intellij idea workspace/rest-assured-example"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="20.0.2+9-78"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/fv/898xtktx7sggqfs3h_2zhdtw0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/iunonavanidze/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="64.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/iunonavanidze"/>
+    <property name="user.timezone" value="Asia/Tbilisi"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="20"/>
+    <property name="user.name" value="iunonavanidze"/>
+    <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.3 install"/>
+    <property name="java.home" value="/Users/iunonavanidze/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="20.0.2"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="com.koroyan.restassuredexample.ApiTest" name="addIntegerStringTest" time="0.103">
+    <failure type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+Caused by: groovy.lang.GroovyRuntimeException: Conflicting module versions. Module [groovy-xml is loaded in version 3.0.9 and you are trying to load version 4.0.15
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl$DefaultModuleListener.onModule(MetaClassRegistryImpl.java:510)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromProperties(ExtensionModuleScanner.java:87)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromMetaInf(ExtensionModuleScanner.java:81)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanClasspathModulesFrom(ExtensionModuleScanner.java:63)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanClasspathModules(ExtensionModuleScanner.java:54)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:125)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.&lt;init&gt;(MetaClassRegistryImpl.java:86)
+	at groovy.lang.GroovySystem.&lt;clinit&gt;(GroovySystem.java:37)
+	... 42 more
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7d417077
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</system-err>
+  </testcase>
+  <testcase classname="com.koroyan.restassuredexample.ApiTest" name="addIntegerStringTest" time="0">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	... 36 more
+</failure>
+  </testcase>
+  <testcase classname="com.koroyan.restassuredexample.ApiTest" name="addIntegerTest" time="0.001">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addInteger(Step.java:38)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerTest(ApiTest.java:25)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+</failure>
+  </testcase>
+  <testcase classname="com.koroyan.restassuredexample.ApiTest" name="addIntegerTest" time="0.001">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addInteger(Step.java:38)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerTest(ApiTest.java:25)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+</failure>
+  </testcase>
+  <testcase classname="com.koroyan.restassuredexample.ApiTest" name="addIntegerXmlTest" time="0.034">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addIntegerXml(Step.java:59)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerXmlTest(ApiTest.java:31)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+</failure>
+  </testcase>
+  <testcase classname="com.koroyan.restassuredexample.ApiTest" name="addIntegerXmlTest" time="0.002">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.addIntegerXml(Step.java:59)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerXmlTest(ApiTest.java:31)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+</failure>
+  </testcase>
+  <testcase classname="com.koroyan.restassuredexample.ApiTest" name="findPersonTest" time="0.001">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.findPerson(Step.java:93)
+	at com.koroyan.restassuredexample.ApiTest.findPersonTest(ApiTest.java:44)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+</failure>
+  </testcase>
+  <testcase classname="com.koroyan.restassuredexample.ListByNameTest" name="testPersonListByName" time="0">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at com.koroyan.restassuredexample.steps.Step.getListByName(Step.java:111)
+	at com.koroyan.restassuredexample.ListByNameTest.testPersonListByName(ListByNameTest.java:30)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;main&quot;]
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass(ClassInfo.java:284)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass(ClassInfo.java:254)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass(ClassInfo.java:310)
+	at io.restassured.authentication.NoAuthScheme.$getStaticMetaClass(NoAuthScheme.groovy)
+	at io.restassured.authentication.NoAuthScheme.&lt;init&gt;(NoAuthScheme.groovy)
+	at io.restassured.RestAssured.&lt;clinit&gt;(RestAssured.java:355)
+	at com.koroyan.restassuredexample.steps.Step.addIntegerString(Step.java:75)
+	at com.koroyan.restassuredexample.ApiTest.addIntegerStringTest(ApiTest.java:37)
+	... 34 more
+</failure>
+  </testcase>
+</testsuite>
